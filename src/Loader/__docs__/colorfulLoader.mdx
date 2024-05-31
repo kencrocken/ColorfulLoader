@@ -1,0 +1,23 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as ColorfulLoader from "./colorfulLoader.stories.tsx";
+
+<Meta of={ColorfulLoader} title="ColorfulLoader" />
+
+#### Example
+
+<Canvas of={ColorfulLoader.Primary} />
+
+## Usage
+
+```ts
+import { ColorfulLoader } from "colorfulLoader";
+
+const Example = () => {
+  return (
+      <ColorfulLoader />
+  );
+};
+
+export default Example;
+```
