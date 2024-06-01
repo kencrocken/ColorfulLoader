@@ -1,6 +1,6 @@
 {
-  "name": "colorful-loader",
-  "version": "1.0.3",
+  "name": "@kencrocken/colorful-loader",
+  "version": "1.0.4",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
