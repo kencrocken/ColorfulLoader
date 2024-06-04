@@ -12,14 +12,12 @@ permissions:
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.build-publish.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - id: build-publish
+        uses: bitovi/github-actions-react-to-github-pages@v1.2.4
         with:
-          node-version: '16.x'
-      - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
-        with:
-          install_command: npm i
-          build_command: npm run build-storybook
-          path: dist/storybook
+          path: dist
