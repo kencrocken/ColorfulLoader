@@ -10,12 +10,63 @@ npm i @kencrocken/colorful-loader
 
 ## Usage
 
+#### With defaults
+
 ```ts
-import { ColorfulLoader } from "@kencrocken/colorful-loader";
+import { ColorfulLoader } from "colorfulLoader";
 
 const Example = () => {
   return (
       <ColorfulLoader />
+  );
+};
+
+export default Example;
+```
+
+#### Defaults
+
+- **colors**  
+  The default colors that the component will cycle through.
+  The default colors are:
+
+  ```ts
+  [
+    '#FFE629',
+    '#18A6D1',
+    '#CCC205',
+    '#54D3D3',
+    '#9776C1',
+    '#ED4545',
+    '#FF9100',
+    '#65B730',
+    '#FF6136',
+    '#AD7745',
+    '#FF71A0'
+  ];
+  ```
+
+- **animationSteps**  
+  The number of keyframes in the animation. The default is **11** steps (not including the starting and finishing steps).
+
+- **animationDuration**  
+  The length of the animation. The default is **5** seconds.
+
+#### Customized
+
+```ts
+import { ColorfulLoader } from "colorfulLoader";
+
+const Example = () => {
+  const colors = ["#FF0000", "#00FF00", "#0000FF"];
+  const duration = 1;
+  const steps = 30;
+  return (
+      <ColorfulLoader
+        colors={colors}
+        animationDuration={duration}
+        animationSteps={steps}
+      />
   );
 };
 

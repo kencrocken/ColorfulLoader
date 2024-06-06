@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import ColorfulLoader from '../colorfulLoader';
+import type { ColorfulLoaderProps } from '../colorfulLoader';
 
-const Example: FC = () => {
+const Example: FC<ColorfulLoaderProps> = args => {
   return (
     <div
       style={{
@@ -11,7 +12,7 @@ const Example: FC = () => {
         height: '100%'
       }}
     >
-      <ColorfulLoader />
+      <ColorfulLoader {...args} />
     </div>
   );
 };
