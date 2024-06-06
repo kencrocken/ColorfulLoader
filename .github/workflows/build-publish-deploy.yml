@@ -44,7 +44,6 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   deploy:
-    needs: publish-npm
     environment:
       name: github-pages
       url: ${{ steps.build-publish.outputs.page_url }}
