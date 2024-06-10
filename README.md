@@ -1,6 +1,6 @@
 # @kencrocken/colorful-loader
 
-A colorful loader component for React.
+A colorful loader component for React. Check out the [storybook](https://kencrocken.github.io/colorful-loader/).
 
 ## Installation
 
