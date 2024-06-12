@@ -13,7 +13,7 @@ npm i @kencrocken/colorful-loader
 #### With defaults
 
 ```ts
-import { ColorfulLoader } from "colorfulLoader";
+import { ColorfulLoader } from "@kencrocken/colorful-loader";
 
 const Example = () => {
   return (
@@ -55,7 +55,7 @@ export default Example;
 #### Customized
 
 ```ts
-import { ColorfulLoader } from "colorfulLoader";
+import { ColorfulLoader } from "@kencrocken/colorful-loader";
 
 const Example = () => {
   const colors = ["#FF0000", "#00FF00", "#0000FF"];
